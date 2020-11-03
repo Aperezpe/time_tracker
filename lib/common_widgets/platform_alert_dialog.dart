@@ -60,10 +60,12 @@ class PlatformAlertDialog extends PlatformWidget {
         ),
       );
     }
-    actions.add(PlatformAlertDialogAction(
-      onPressed: () => Navigator.of(context).pop(true),
-      child: Text(defaultAtionText),
-    ));
+    actions.add(
+      PlatformAlertDialogAction(
+        onPressed: () => Navigator.of(context).pop(true),
+        child: Text(defaultAtionText),
+      ),
+    );
 
     return actions;
   }
