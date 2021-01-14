@@ -16,6 +16,7 @@ class EmailSignInModel with EmailAndPasswordValidators {
   final EmailSignInFormType formType;
   final bool isLoading;
   final bool submitted;
+
   String get primaryText =>
       formType == EmailSignInFormType.signIn ? 'Sign in' : 'Create an account';
 
